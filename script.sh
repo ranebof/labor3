@@ -1,7 +1,6 @@
 #!/bin/bash
 yum update -y
-yum install mc vim git httpd cronie -y
-service httpd start
+yum install mc vim git cronie -y
 systemctl start crond
 systemctl enable crond
 
